@@ -1,0 +1,44 @@
+.ptr-element {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 30px;
+ }
+ 
+ .loading {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .loading span {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   margin-right: 5px;
+   background-color: gray;
+   border-radius: 50%;
+   animation: loading-ptr 1s infinite;
+ }
+ 
+ .loading .loading-ptr-1 {
+   animation-delay: 0.1s;
+ }
+ 
+ .loading .loading-ptr-2 {
+   animation-delay: 0.2s;
+ }
+ 
+ .loading .loading-ptr-3 {
+   animation-delay: 0.3s;
+ }
+ 
+ @keyframes loading-ptr {
+   0%,
+   40%,
+   100% {
+     opacity: 1;
+   }
+   20% {
+     opacity: 0.5;
+   }
+ }
