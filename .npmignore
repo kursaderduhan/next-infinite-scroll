@@ -1,4 +1,4 @@
-src
+src/
 .prettierrc.json
 tsconfig.json
 yarn.lock

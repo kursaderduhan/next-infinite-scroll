@@ -1,13 +1,15 @@
 {
   "name": "next-infinite-scroll",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "Infinite and scroll usage package for projects using feed feature",
-  "main": "dist/index.js",
-  "repository": "https://github.com/kursaderduhan/next-infinite-scroll",
+  "types": "./dist/infiniteScroll.d.ts",
+  "main": "./dist/index.js",
+  "repository": "git+https://github.com/kursaderduhan/next-infinite-scroll.git",
   "author": "Kürşad Erduhan",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "yarn copy-files && tsc",
+    "copy-files": "cp -r ./src/*.css ./dist"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",

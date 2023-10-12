@@ -17,9 +17,9 @@ export const InfiniteScroll = ({
   children: React.ReactNode
   loader?: any
   endMessage?: any
-  next: () => void
+  next?: () => void
   pullDown?: () => void
-  feedCount: boolean
+  feedCount?: boolean
   pullDownToRefreshTopDistance?: number
   initialLoadingCount?: number
   externalDistance?: number
@@ -62,7 +62,7 @@ export const InfiniteScroll = ({
       return
     }
     setIsLoading(true)
-    next()
+    next?.()
     setTimeout(() => setIsLoading(false), 200)
   }, [isAtBottom])
 
@@ -85,7 +85,7 @@ export const InfiniteScroll = ({
   const handleTouchEnd = () => {
     if (currentY > startY) {
       setIsRefreshing(true)
-      pullDown && pullDown()
+      pullDown?.()
     }
     setCurrentY(0)
     setTimeout(() => setIsRefreshing(false), 2000)
