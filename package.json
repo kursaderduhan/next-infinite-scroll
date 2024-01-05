@@ -9,7 +9,8 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn copy-files && tsc",
-    "copy-files": "cp -r ./src/*.css ./dist"
+    "copy-files": "cp -r ./src/*.css ./dist",
+    "prepare": "yarn build"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
