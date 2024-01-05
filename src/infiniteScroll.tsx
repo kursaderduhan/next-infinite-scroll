@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './infiniteScroll.css'
+import styles from './infiniteScroll.module.css'
 
 export const InfiniteScroll = ({
   children,
@@ -100,11 +100,11 @@ export const InfiniteScroll = ({
     >
       {initialLoading && <Loader />}
       {refreshing && (
-        <div className='ptr-element'>
-          <div className='loading'>
-            <span className='loading-ptr-1' />
-            <span className='loading-ptr-2' />
-            <span className='loading-ptr-3' />
+        <div className={styles['ptr-element']}>
+          <div className={styles['loading']}>
+            <span className={styles['loading-ptr-1']} />
+            <span className={styles['loading-ptr-2']} />
+            <span className={styles['loading-ptr-3']} />
           </div>
         </div>
       )}
