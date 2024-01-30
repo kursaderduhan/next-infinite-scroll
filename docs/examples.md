@@ -39,3 +39,29 @@ function App() {
 
 export default App
 ```
+
+## Props
+
+The `next-infinite-scroll` component accepts the following props:
+
+- `next` (function): Represents the function to load more data. This function is automatically called when the user reaches the bottom of the page.
+
+- `pullDown` (function): Represents the function to refresh the page. This function is called when the user pulls the page down from the top.
+
+- `feedCount` (boolean): Indicates whether there is a count of remaining items to be displayed.
+
+- `pullDownToRefreshTopDistance` (number): Specifies the distance from the top at which the pull-to-refresh action is triggered.
+
+- `initialLoadingCount` (number): Defines the initial loading count.
+
+- `externalDistance` (number): Sets the external distance used for triggering the loading of more data.
+
+- `isRefreshing` (boolean): Indicates whether the component is currently in a refreshing state.
+
+- `isInitialLoading` (boolean): Indicates whether the component is in its initial loading state.
+
+- `children` (React node): The content that you want to apply infinite scrolling to.
+
+- `loader` (any): Custom loader component.
+
+- `endMessage` (any): Custom end message component.

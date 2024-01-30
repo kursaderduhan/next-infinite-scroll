@@ -1,6 +1,6 @@
 {
   "name": "next-infinite-scroll",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Infinite and scroll usage package for projects using feed feature",
   "types": "./dist/infiniteScroll.d.ts",
   "main": "./dist/index.js",
