@@ -12,7 +12,8 @@ export const InfiniteScroll = ({
   initialLoadingCount = 0,
   externalDistance = 100,
   isRefreshing = false,
-  isInitialLoading = true
+  isInitialLoading = true,
+  loadingClassName
 }: {
   children: React.ReactNode
   loader?: any
@@ -25,6 +26,7 @@ export const InfiniteScroll = ({
   externalDistance?: number
   isRefreshing?: boolean
   isInitialLoading?: boolean
+  loadingClassName?: string
 }) => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [isAtBottom, setIsAtBottom] = useState<boolean>(false)
@@ -100,7 +102,7 @@ export const InfiniteScroll = ({
     >
       {initialLoading && <Loader />}
       {refreshing && (
-        <div className='ptr-element'>
+        <div className={loadingClassName || 'ptr-element'}>
           <div className='loading'>
             <span className='loading-ptr-1' />
             <span className='loading-ptr-2' />

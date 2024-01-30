@@ -1,4 +1,5 @@
 src/
+node_modules
 .prettierrc.json
 tsconfig.json
 yarn.lock
