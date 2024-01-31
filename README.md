@@ -5,7 +5,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/kursaderduhan/next-infinite-scroll)
 
 <div align='center'>
-`next-infinite-scroll` is a React component that helps you implement infinite scrolling in your React applications. This component automatically loads more content as users scroll to the bottom of the page. It also allows users to refresh the page by pulling it down.
+next-infinite-scroll is a React component that helps you implement infinite scrolling in your React applications. This component automatically loads more content as users scroll to the bottom of the page. It also allows users to refresh the page by pulling it down.
 
 <br />
 

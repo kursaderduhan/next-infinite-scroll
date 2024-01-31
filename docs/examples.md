@@ -65,3 +65,5 @@ The `next-infinite-scroll` component accepts the following props:
 - `loader` (any): Custom loader component.
 
 - `endMessage` (any): Custom end message component.
+
+- `loadingClassName` (string): Custom CSS class name for the loading indicator.
